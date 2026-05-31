@@ -87,14 +87,21 @@ h1 {
   font-weight: 700;
 }
 
+#startButton,
 #nextButton {
   background: var(--accent);
   color: #ffffff;
 }
 
+#startButton:hover,
+#startButton:focus-visible,
 #nextButton:hover,
 #nextButton:focus-visible {
   background: var(--accent-strong);
+}
+
+#startButton[hidden] {
+  display: none;
 }
 
 #listenButton {

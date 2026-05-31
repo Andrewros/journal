@@ -58,13 +58,15 @@ const promptText = document.querySelector("#promptText");
 const modeLabel = document.querySelector("#modeLabel");
 const progress = document.querySelector("#progress");
 const voiceStatus = document.querySelector("#voiceStatus");
+const startButton = document.querySelector("#startButton");
 const nextButton = document.querySelector("#nextButton");
 const listenButton = document.querySelector("#listenButton");
 
 let currentIndex = 0;
 let showingAnswer = false;
+let started = false;
 let recognition = null;
-let listening = true;
+let listening = false;
 let recognitionActive = false;
 let lastNextCommandAt = 0;
 
@@ -108,7 +110,7 @@ function speak(text, afterSpeech) {
   window.speechSynthesis.speak(utterance);
 }
 
-function showQuestion() {
+function showQuestion(shouldSpeak = started) {
   if (!hasContent()) {
     modeLabel.textContent = "Question";
     promptText.textContent = "Add questions and answers in script.js to begin.";
@@ -120,7 +122,7 @@ function showQuestion() {
   modeLabel.textContent = "Question";
   promptText.textContent = questions[currentIndex];
   updateProgress();
-  speak(questions[currentIndex]);
+  if (shouldSpeak) speak(questions[currentIndex]);
 }
 
 function showAnswer() {
@@ -139,6 +141,11 @@ function moveToNextQuestion() {
 function handleNext() {
   if (!hasContent()) return;
 
+  if (!started) {
+    startPractice();
+    return;
+  }
+
   if (showingAnswer) {
     showingAnswer = false;
     moveToNextQuestion();
@@ -151,7 +158,7 @@ function handleNext() {
 function startListening(delay = 0) {
   if (!recognition || !listening || recognitionActive) return;
 
-  window.setTimeout(() => {
+  const beginListening = () => {
     if (!recognition || !listening || recognitionActive) return;
 
     try {
@@ -162,7 +169,13 @@ function startListening(delay = 0) {
     } catch {
       recognitionActive = false;
     }
-  }, delay);
+  };
+
+  if (delay > 0) {
+    window.setTimeout(beginListening, delay);
+  } else {
+    beginListening();
+  }
 }
 
 function stopListening() {
@@ -232,6 +245,11 @@ function setupSpeechRecognition() {
 }
 
 function toggleListening() {
+  if (!started) {
+    startPractice();
+    return;
+  }
+
   if (!recognition) return;
 
   if (listening) {
@@ -242,9 +260,20 @@ function toggleListening() {
   }
 }
 
+function startPractice() {
+  if (!hasContent()) return;
+
+  started = true;
+  listening = Boolean(recognition);
+  startButton.hidden = true;
+  startListening();
+  showQuestion(true);
+}
+
+startButton.addEventListener("click", startPractice);
 nextButton.addEventListener("click", handleNext);
 listenButton.addEventListener("click", toggleListening);
 
 setupSpeechRecognition();
-showQuestion();
-startListening();
+showQuestion(false);
+voiceStatus.textContent = "Press Start";
