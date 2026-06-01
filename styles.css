@@ -35,10 +35,10 @@ button {
 
 .practice-panel {
   width: min(760px, 100%);
+  height: min(640px, calc(100vh - 48px));
   min-height: 360px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 32px;
   padding: clamp(24px, 5vw, 48px);
   border: 1px solid var(--line);
@@ -65,9 +65,12 @@ button {
 }
 
 h1 {
+  flex: 1;
+  min-height: 0;
   margin: 0;
+  overflow-y: auto;
   overflow-wrap: anywhere;
-  font-size: clamp(2rem, 6vw, 4.25rem);
+  font-size: var(--prompt-font-size, clamp(2rem, 6vw, 4.25rem));
   line-height: 1.05;
   letter-spacing: 0;
 }
@@ -120,7 +123,8 @@ h1 {
   }
 
   .practice-panel {
-    min-height: calc(100vh - 32px);
+    height: calc(100vh - 32px);
+    min-height: 0;
   }
 
   .status-row,
