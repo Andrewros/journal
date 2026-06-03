@@ -21,7 +21,8 @@ const questions = [
   "What is the best drill to improve confidence?",
   "Why is concentration so important?",
   "What is the best way to be more extroverted when talking one on one",
-  "Why should you make sure to always get approximately 8 hours of sleep every night even if you wake up early."
+  "Why should you make sure to always get approximately 8 hours of sleep every night even if you wake up early.",
+  "What is the best way in a conversation to stay more present"
 ];
 const answers = [
   "One of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -38,7 +39,7 @@ const answers = [
   "Make it so that everyone besides the person who knows something will perform an action. Think about how Patrick Jane tricks a lot of people. It could be making them look around for the person who they think did it by making them raise hands or offering money for information everyone else would give.",
   "You are genetically an early bird and thus waking up early will keep you more productive. There is nothing you can do about this no different than how hard an ant tries it will never be able to beat its genetics and become a human.",
   "It is a great time to either journal or observe and you are also addicted to the screens so it should only be something done that is scheduled always and likely at the end of the day.",
-  "Smile. Speak more confidently. Give a pause before responding. Talk in terms of stories not facts.",
+  "Smile. Speak more confidently. Give a pause before responding. Talk in terms of stories not facts. NEVER interrupt.",
   "Use the foot in the door technique. Do 1 anki, then 2 then 4 and so on and you can eventually reach a max like 16 before taking a break but that is the best way to do it. The break can be relaxing on the bed just don't make it anything stimulating.",
   "Since high school you have already been better than most people and thus alot of comparisons are going to be bad. Thus you have two options. Compare yourself against only people who are better than you which is ridiculous since it isn't possible to holistically view between you and someone else who is better. They might be smarter and stronger than you but more miserable which is not a win that is necessarily good you will just compare average feets of yourself versus their best. You could also compare against average person around you who you will always beat. Thus the best comparison is against you from a year ago or some time in the past.",
   "Don't take anything personally from people around you. Imagine being insulted by a kindergartener and taking that personally. Most people know nothing about you and them insulting you likely means they are a baby compared to you anyway. But never use this as a way to dismiss beliefs. Almost everyone has useful beliefs that you haven't thought of because you are a different type of creature and part of improving is acknowledging your constraints and understanding anyway even if you disagree.",
@@ -46,7 +47,8 @@ const answers = [
   "Visualize success in the scenario. This will condition yourself to feel better in the scenario that you are in.",
   "It trains your neocortex. The part of your brain responsible for free will. It makes your actions intentional and not automatic which is the only way to optimize them.",
   "Imagine as if everyone you are talking with is a heavenly angel and there is no judgement of anything. Moreover, you can also warm up with friends beforehand.",
-  "Because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours."
+  "Because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours.",
+  "Pretend that the person you are talking to is someone that you greatly admire"
 ];
 
 const promptText = document.querySelector("#promptText");
