@@ -22,7 +22,8 @@ const questions = [
   "Why is concentration so important?",
   "What is the best way to be more extroverted when talking one on one",
   "Why should you make sure to always get approximately 8 hours of sleep every night even if you wake up early.",
-  "What is the best way in a conversation to stay more present"
+  "What is the best way in a conversation to stay more present",
+  "What do you need to remember before doing anything that you enjoy that is addictive."
 ];
 const answers = [
   "One of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -48,7 +49,8 @@ const answers = [
   "It trains your neocortex. The part of your brain responsible for free will. It makes your actions intentional and not automatic which is the only way to optimize them.",
   "Imagine as if everyone you are talking with is a heavenly angel and there is no judgement of anything. Moreover, you can also warm up with friends beforehand.",
   "Because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours.",
-  "Pretend that the person you are talking to is someone that you greatly admire"
+  "Pretend that the person you are talking to is someone that you greatly admire",
+  "Remember that you will be addicted and unable to stop. This is why these activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow."
 ];
 
 const promptText = document.querySelector("#promptText");
