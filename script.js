@@ -24,7 +24,8 @@ const questions = [
   "Why should you make sure to always get approximately 8 hours of sleep every night even if you wake up early.",
   "What is the best way in a conversation to stay more present",
   "What do you need to remember before doing anything that you enjoy that is addictive.",
-  "What is the most important time of the day and why?"
+  "What is the most important time of the day and why?",
+  "When is the only time you should not go to bed by 8PM?"
 ];
 const answers = [
   "One of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -52,7 +53,8 @@ const answers = [
   "Because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours.",
   "Pretend that the person you are talking to is someone that you greatly admire",
   "Remember that you will be addicted and unable to stop. This is why these activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow.",
-  "The morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning."
+  "The morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning.",
+  "If you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late."
 ];
 
 const promptText = document.querySelector("#promptText");
