@@ -11,9 +11,10 @@ const questions = [
   "What should you do when you don't want to work and why?",
   "Why should you be frugal?",
   "How do you find out who knows something important?",
-  "Why should you go to sleep early?",
   "Why should you avoid screens when not doing anything?",
   "What are the easiest habits to improve charisma?",
+  "What is the best way to convey information to someone else",
+  "What is the most important charisma habit so many people break",
   "How do you do all the anki on a day you are very unmotivated?",
   "Why should you avoid comparison to others?",
   "What is a helpful way to deal with being better than most people around you?",
@@ -40,9 +41,10 @@ const answers = [
   "Work anyway. By working when you don't want to you will not be as productive but you will have gained discipline which is more imporant. This is why it is more productive to work when you're not motivated as opposed to when you are",
   "Any dollar that you spend now will be worth 2.6 times that amount in the future thus you should not just be thinking about the money being spend but the opportunity cost of that expense. Remember there is no reason that what you want to do will correspond with what is rational.",
   "Make it so that everyone besides the person who knows something will perform an action. Think about how Patrick Jane tricks a lot of people. It could be making them look around for the person who they think did it by making them raise hands or offering money for information everyone else would give.",
-  "You are genetically an early bird and thus waking up early will keep you more productive. There is nothing you can do about this no different than how hard an ant tries it will never be able to beat its genetics and become a human.",
   "It is a great time to either journal or observe and you are also addicted to the screens so it should only be something done that is scheduled always and likely at the end of the day.",
-  "Smile. Speak more confidently. Give a pause before responding. Talk in terms of stories not facts. NEVER interrupt.",
+  "Smile. Speak more confidently. Give a pause before responding",
+  "Tell stories don't list facts, sometimes telling facts is important for story context but people only care about stories",
+  "NEVER interrupt.",
   "Use the foot in the door technique. Do 1 anki, then 2 then 4 and so on and you can eventually reach a max like 16 before taking a break but that is the best way to do it. The break can be relaxing on the bed just don't make it anything stimulating.",
   "Since high school you have already been better than most people and thus alot of comparisons are going to be bad. Thus you have two options. Compare yourself against only people who are better than you which is ridiculous since it isn't possible to holistically view between you and someone else who is better. They might be smarter and stronger than you but more miserable which is not a win that is necessarily good you will just compare average feets of yourself versus their best. You could also compare against average person around you who you will always beat. Thus the best comparison is against you from a year ago or some time in the past.",
   "Don't take anything personally from people around you. Imagine being insulted by a kindergartener and taking that personally. Most people know nothing about you and them insulting you likely means they are a baby compared to you anyway. But never use this as a way to dismiss beliefs. Almost everyone has useful beliefs that you haven't thought of because you are a different type of creature and part of improving is acknowledging your constraints and understanding anyway even if you disagree.",
@@ -53,7 +55,7 @@ const answers = [
   "Because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours.",
   "Pretend that the person you are talking to is someone that you greatly admire",
   "Remember that you will be addicted and unable to stop. This is why these activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow.",
-  "The morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning.",
+  "The morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning.Y ou are genetically more productive in the morning so maximize that time on any other day.",
   "If you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late."
 ];
 
