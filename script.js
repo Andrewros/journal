@@ -1,25 +1,23 @@
 const questions = [
   "Why listen to this daily",
   "What is the most important fact to remember that is also obviously true",
+  "What is the only way to learn something?",
   "What are the main ways to win any game",
-  "What subjects should you not rest until they are mastered",
+  "What is the most important fact about discomfort",
   "What is the best way to deal with discomfort",
   "Why should you meditate daily?",
   "Why should you look good",
   "Why should you always journal in free time",
   "What should you do during moments where nothing is happening and you can't journal",
-  "What should you do when you don't want to work and why?",
   "Why should you be frugal?",
   "How do you find out who knows something important?",
-  "Why should you avoid screens when not doing anything?",
   "What are the easiest habits to improve charisma?",
   "What is a persons favorite thing to hear that makes them like you",
   "What is the best way to convey information to someone else",
   "What is the most important charisma habit so many people break",
-  "How do you do all the anki on a day you are very unmotivated?",
+  "How do you be disciplined on days when you are unmotivated?",
   "Why should you avoid comparison to others?",
   "What is a helpful way to deal with being better than most people around you?",
-  "Why is it ok to be delusionally confident?",
   "What is the best drill to improve confidence?",
   "Why is concentration so important?",
   "What is the best way to be more extroverted when talking one on one",
@@ -30,35 +28,33 @@ const questions = [
   "When is the only time you should not go to bed by 8PM?"
 ];
 const answers = [
-  "One of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
+  "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
   "There is no reason that there should be a high correlation between what your dopamine receptors in your brain wants to do and what you actually should be doing for long-term happiness.",
+  "The only way to really learn things is to think about them a lot and use the knowledge maybe by solving problems or just using it in general for social tips. This is why reading long books is more important than just reading a youtube summary. Why writing code by hand teaches more than AI generating a solution. Thinking about the answer will help you learn much better than just getting answers. This can be another way to use journaling.",
   "1. Manipulate opponents model of reality. This is often done by making opponent think they alread won or already lost but there are other ways to do it. Patrick Jane uses it a lot to catch killers. 2. Attack the player not the game. Think about how Ayanokouji beat Ichinose in Year 2 volume 12 sometimes better opponents are easier to attack.",
-  "Machine Learning and Cybersecurity as these are powerful skills",
-  "Remember that many people including people you admire have gone through the same things if not worse",
-  "Meditation is one of the few ways to improve vertical thinking which is one of the pillars to being smart. It allows you to think through the consequences of actions even ones other people don't see.",
-  "For one people like and trust people more who look good even if they are not attracted to you. Second of all you are maximizing the chance of a successful interaction with someone you like as you never know when you will meet that person",
-  "It is used to improve lateral thinking and create ideas for more efficiency and living a better life.",
-  "Observe. Journaling is only useful if you can write things down. Think about how many of your normal thoughts have really been that impactful. It is better to just train observation as a skill than waste time thinking about useless stuff.",
-  "Work anyway. By working when you don't want to you will not be as productive but you will have gained discipline which is more imporant. This is why it is more productive to work when you're not motivated as opposed to when you are",
-  "Any dollar that you spend now will be worth 2.6 times that amount in the future thus you should not just be thinking about the money being spend but the opportunity cost of that expense. Remember there is no reason that what you want to do will correspond with what is rational.",
-  "Make it so that everyone besides the person who knows something will perform an action. Think about how Patrick Jane tricks a lot of people. It could be making them look around for the person who they think did it by making them raise hands or offering money for information everyone else would give.",
-  "It is a great time to either journal or observe and you are also addicted to the screens so it should only be something done that is scheduled always and likely at the end of the day.",
-  "Smile. Speak more confidently. Give a pause before responding",
-  "The persons name",
-  "Tell stories don't list facts, sometimes telling facts is important for story context but people only care about stories",
-  "NEVER interrupt.",
-  "Use the foot in the door technique. Do 1 anki, then 2 then 4 and so on and you can eventually reach a max like 16 before taking a break but that is the best way to do it. The break can be relaxing on the bed just don't make it anything stimulating.",
-  "Since high school you have already been better than most people and thus alot of comparisons are going to be bad. Thus you have two options. Compare yourself against only people who are better than you which is ridiculous since it isn't possible to holistically view between you and someone else who is better. They might be smarter and stronger than you but more miserable which is not a win that is necessarily good you will just compare average feets of yourself versus their best. You could also compare against average person around you who you will always beat. Thus the best comparison is against you from a year ago or some time in the past.",
-  "Don't take anything personally from people around you. Imagine being insulted by a kindergartener and taking that personally. Most people know nothing about you and them insulting you likely means they are a baby compared to you anyway. But never use this as a way to dismiss beliefs. Almost everyone has useful beliefs that you haven't thought of because you are a different type of creature and part of improving is acknowledging your constraints and understanding anyway even if you disagree.",
-  "Beliefs shouldn't be about what is true. Beliefs should only be about what is helpful and as long as you restrain yourself it is more helpful than harmful.",
-  "Visualize success in the scenario. This will condition yourself to feel better in the scenario that you are in.",
-  "It trains your neocortex. The part of your brain responsible for free will. It makes your actions intentional and not automatic which is the only way to optimize them.",
-  "Imagine as if everyone you are talking with is a heavenly angel and there is no judgement of anything. Moreover, you can also warm up with friends beforehand.",
-  "Because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours.",
-  "Pretend that the person you are talking to is someone that you greatly admire",
-  "Remember that you will be addicted and unable to stop. This is why these activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow.",
-  "The morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning.Y ou are genetically more productive in the morning so maximize that time on any other day.",
-  "If you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late."
+  "Discomfort will always exist until you have momentum. Discomfort is proof that you are building discipline and getting better. You should live in discomfort and accept it and no that it is never gonna go away until you perform the actions anyway no matter what you are overthinking. And you need to perform the actions. Comfort kills you. Momentum creates a god.",
+  "The best way to handle discomfort is by remembering that many people including people you admire have gone through the same things if not worse. Remember in elementary school thinking about how Count Olaf made the Baudelaires run laps helped you run for longer.",
+  "Meditation is incredibly important because it is one of the few ways to improve vertical thinking which is one of the pillars to being smart. It allows you to think through the consequences of actions even ones other people don't see.",
+  "You should look good because for one people like and trust people more who look good even if they are not attracted to you. Second of all you are maximizing the chance of a successful interaction with someone you like as you never know when you will meet that person",
+  "Journaling is important because it is used to improve lateral thinking and create ideas for more efficiency and living a better life.",
+  "When you can't journal you should observe. Journaling is only useful if you can write things down. Think about how many of your normal thoughts have really been that impactful. It is better to just train observation as a skill than waste time thinking about useless stuff.",
+  "You should be frugal because any dollar that you spend now will be worth 2.6 times that amount in the future thus you should not just be thinking about the money being spend but the opportunity cost of that expense. Remember there is no reason that what you want to do will correspond with what is rational.",
+  "The best way to find someone who knows something is to make it so that everyone besides the person who knows something will perform an action. Think about how Patrick Jane tricks a lot of people. It could be making them look around for the person who they think did it by making them raise hands or offering money for information everyone else would give.",
+  "The best way to be more charismatic is by Smiling. Speaking more confidently. Giving a pause before responding",
+  "People love to hear there own name",
+  "The best way to convey information is by telling stories don't list facts, sometimes telling facts is important for story context but people only care about stories",
+  "The best charisma habit people miss is NEVER interrupt.",
+  "Use the foot in the door technique to do things even when you are not motivated. For anki you can do 1 anki, then 2 then 4 and so on. For waking up start by moving your feet around. Then move your left foot out of the bed. Then move right foot closer to edge. Then move right foot off edge. Then stand up. Your body is tired because it doesn't want to invest as much. But by turning things that feel like a lot into smaller tasks you can trick your brain into investing into each part.",
+  "You should not compare yourself to others because it isn't possible to holistically compare you and someone else who is better. They might be smarter and stronger than you but more miserable which is not a win that is necessarily good you will just compare average feets of yourself versus their best. You could also compare against average person around you who you will always beat. Thus the best comparison is against you from a year ago or some time in the past.",
+  "The biggest tip for living in a world where you are better than most people is don't take anything personally from people around you. Imagine being insulted by a kindergartener and taking that personally. Most people know nothing about you and them insulting you shows they are inferior. But never use superiority as a way to dismiss beliefs. Almost everyone has useful beliefs that you haven't thought of because you are a different type of creature and part of improving is acknowledging your constraints and understanding anyway even if you disagree.",
+  "The best drill to improve confidence is visualizing success in the scenario. This will condition yourself to feel better in the scenario that you are in. Keep in mind this won't create perfection and you will still feel discomfort. But this should improve performance.",
+  "The reason you should always concentrate is that it trains your neocortex. The part of your brain responsible for free will. It makes your actions intentional and not automatic which is the only way to optimize them.",
+  "The best way to be more charismatic one on one is by imagining as if everyone you are talking with is a heavenly angel and there is no judgement of anything. Moreover, you can also warm up with friends beforehand.",
+  "You should always get 8 hours of sleep because being forced to be awake but being extremely tired feels like torture. It makes life not fun and you repeatedly fall for this fallacy. Too much sleep is better than too little. Historically you wake up earlier and then get tired in a few hours.",
+  "The best way to be present in a conversation is to pretend that the person you are talking to is someone that you greatly admire. The easiest way is just think about something great about them.",
+  "What you need to remember before doing anything addictive is that you will be addicted and unable to stop. This is why addictive activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow.",
+  "The most important time of day is the morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning. You are genetically more productive in the morning so maximize that time on any other day.",
+  "You should only go to bed after 8PM if you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late."
 ];
 
 const promptText = document.querySelector("#promptText");
@@ -76,6 +72,7 @@ let recognition = null;
 let listening = false;
 let recognitionActive = false;
 let lastNextCommandAt = 0;
+const nextCommandCooldownMs = 250;
 const minPromptFontSize = 20;
 
 function hasContent() {
@@ -192,7 +189,7 @@ function handleNext() {
   showAnswer();
 }
 
-function startListening(delay = 0) {
+function startListening() {
   if (!recognition || !listening || recognitionActive) return;
 
   const beginListening = () => {
@@ -208,11 +205,7 @@ function startListening(delay = 0) {
     }
   };
 
-  if (delay > 0) {
-    window.setTimeout(beginListening, delay);
-  } else {
-    beginListening();
-  }
+  beginListening();
 }
 
 function stopListening() {
@@ -229,7 +222,7 @@ function stopListening() {
 
 function acceptNextCommand() {
   const now = Date.now();
-  if (now - lastNextCommandAt < 900) return false;
+  if (now - lastNextCommandAt < nextCommandCooldownMs) return false;
 
   lastNextCommandAt = now;
   return true;
@@ -246,7 +239,7 @@ function setupSpeechRecognition() {
 
   recognition = new SpeechRecognition();
   recognition.continuous = true;
-  recognition.interimResults = false;
+  recognition.interimResults = true;
   recognition.lang = "en-US";
 
   recognition.onresult = (event) => {
@@ -263,7 +256,7 @@ function setupSpeechRecognition() {
 
   recognition.onend = () => {
     recognitionActive = false;
-    startListening(250);
+    startListening();
   };
 
   recognition.onerror = (event) => {
@@ -277,7 +270,7 @@ function setupSpeechRecognition() {
     }
 
     voiceStatus.textContent = "Restarting listener";
-    startListening(500);
+    startListening();
   };
 }
 
