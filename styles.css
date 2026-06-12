@@ -22,7 +22,8 @@ body {
   color: var(--text);
 }
 
-button {
+button,
+input {
   font: inherit;
 }
 
@@ -90,8 +91,35 @@ h1 {
   font-weight: 700;
 }
 
+.jump-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jump-control label {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.jump-control input {
+  width: 110px;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0 12px;
+  color: var(--text);
+}
+
+.jump-control input:focus-visible {
+  border-color: var(--accent);
+  outline: 3px solid var(--accent-soft);
+}
+
 #startButton,
-#nextButton {
+#nextButton,
+#jumpButton {
   background: var(--accent);
   color: #ffffff;
 }
@@ -99,7 +127,9 @@ h1 {
 #startButton:hover,
 #startButton:focus-visible,
 #nextButton:hover,
-#nextButton:focus-visible {
+#nextButton:focus-visible,
+#jumpButton:hover,
+#jumpButton:focus-visible {
   background: var(--accent-strong);
 }
 
@@ -133,6 +163,15 @@ h1 {
   }
 
   .controls button {
+    width: 100%;
+  }
+
+  .jump-control {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .jump-control input {
     width: 100%;
   }
 }

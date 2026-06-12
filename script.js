@@ -30,7 +30,8 @@ const questions = [
   "What is the best way in a conversation to stay more present",
   "What do you need to remember before doing anything that you enjoy that is addictive.",
   "What is the most important time of the day and why?",
-  "When is the only time you should not go to bed by 8PM?"
+  "When is the only time you should not go to bed by 8PM?",
+  "What is the algorithm for negotiations",
 ];
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -64,7 +65,8 @@ const answers = [
   "The best way to be present in a conversation is to pretend that the person you are talking to is someone that you greatly admire. The easiest way is just think about something great about them.",
   "What you need to remember before doing anything addictive is that you will be addicted and unable to stop. This is why addictive activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow.",
   "The most important time of day is the morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning. You are genetically more productive in the morning so maximize that time on any other day.",
-  "You should only go to bed after 8PM if you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late."
+  "You should only go to bed after 8PM if you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late.",
+  "The algorithm for negotiations is saying I'm sorry then mirror them and then be quiet then repeat. Ask clarifying questions too that are open ended since you can't just mirror but that mix will get you great results. "
 ];
 
 const promptText = document.querySelector("#promptText");
@@ -74,6 +76,8 @@ const voiceStatus = document.querySelector("#voiceStatus");
 const startButton = document.querySelector("#startButton");
 const nextButton = document.querySelector("#nextButton");
 const listenButton = document.querySelector("#listenButton");
+const jumpForm = document.querySelector("#jumpForm");
+const cardNumberInput = document.querySelector("#cardNumber");
 
 let currentIndex = 0;
 let showingAnswer = false;
@@ -97,6 +101,7 @@ function updateProgress() {
   const total = questions.length;
   const current = total === 0 ? 0 : currentIndex + 1;
   progress.textContent = `${current} / ${total}`;
+  cardNumberInput.max = String(total);
 }
 
 function fitPromptText() {
@@ -197,6 +202,23 @@ function handleNext() {
   }
 
   showAnswer();
+}
+
+function jumpToCard(event) {
+  event.preventDefault();
+  if (!hasContent()) return;
+
+  const cardNumber = Number(cardNumberInput.value);
+
+  if (!Number.isInteger(cardNumber) || cardNumber < 1 || cardNumber > questions.length) {
+    voiceStatus.textContent = `Choose a card from 1 to ${questions.length}`;
+    cardNumberInput.select();
+    return;
+  }
+
+  currentIndex = cardNumber - 1;
+  showQuestion(started);
+  cardNumberInput.value = "";
 }
 
 function startListening() {
@@ -313,6 +335,7 @@ function startPractice() {
 startButton.addEventListener("click", startPractice);
 nextButton.addEventListener("click", handleNext);
 listenButton.addEventListener("click", toggleListening);
+jumpForm.addEventListener("submit", jumpToCard);
 
 setupSpeechRecognition();
 showQuestion(false);
