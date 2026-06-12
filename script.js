@@ -32,6 +32,8 @@ const questions = [
   "What is the most important time of the day and why?",
   "When is the only time you should not go to bed by 8PM?",
   "What is the algorithm for negotiations",
+  "What is the best way to show empathy in a conversation?",
+  "What is the best way to make something bad seem not as bad?"
 ];
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -66,7 +68,9 @@ const answers = [
   "What you need to remember before doing anything addictive is that you will be addicted and unable to stop. This is why addictive activities should be restricted to nighttime before you go to bed. You are a slave to this and it is not something that can easily be fixed with discipline. The very act of testing discipline is proof you don't have it as this is something you can be disciplined to follow.",
   "The most important time of day is the morning. It is incredibly predictive of how the rest of the day will go as momentum is incredibly strong. Always remember to have a good morning. You are genetically more productive in the morning so maximize that time on any other day.",
   "You should only go to bed after 8PM if you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late.",
-  "The algorithm for negotiations is saying I'm sorry then mirror them and then be quiet then repeat. Ask clarifying questions too that are open ended since you can't just mirror but that mix will get you great results. "
+  "The algorithm for negotiations is saying I'm sorry then mirror them and then be quiet then repeat. Ask clarifying questions too that are open ended since you can't just mirror but that mix will get you great results. ",
+  "The best way to show someone empathy is to use labels like 'It sounds like'. 'It seems like' and more to make them feel understand",
+  "The best way to make something bad seem not as bad is by straightforwardly saying the bad thing without filter or sounding better and then explaining the positives. This leads to peolpe not actually thinking of it as bad."
 ];
 
 const promptText = document.querySelector("#promptText");
