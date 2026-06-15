@@ -2,6 +2,7 @@ const questions = [
   "Why listen to this daily",
   "What is the most important fact to remember that is also obviously true",
   "What is the only way to learn something?",
+  "What is the only way to be happy?",
   "What are the main ways to win any game",
   "What is the worst thing to do with private knowledge you just aquired",
   "What is the most important fact about discomfort",
@@ -38,6 +39,7 @@ const questions = [
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
   "There is no reason that there should be a high correlation between what your dopamine receptors in your brain wants to do and what you actually should be doing for long-term happiness.",
+  "The best way to be happy willingly is to try to be happy but do not think about happiness. The best way to avoid thinking is by singing a song or thinking about something funner. By moving around.",
   "The only way to really learn things is to think about them a lot and use the knowledge maybe by solving problems or just using it in general for social tips. This is why reading long books is more important than just reading a youtube summary. Why writing code by hand teaches more than AI generating a solution. Thinking about the answer will help you learn much better than just getting answers. This can be another way to use journaling.",
   "1. Manipulate opponents model of reality. This is often done by making opponent think they alread won or already lost but there are other ways to do it. Patrick Jane uses it a lot to catch killers. 2. Attack the player not the game. Think about how Ayanokouji beat Ichinose in Year 2 volume 12 sometimes better opponents are easier to attack.",
   "The worst thing you can do with private info you aquired is to share it and make it public. There are so many traps you can do with asymetric information and you lose all of them when you tell the world about that information.",
