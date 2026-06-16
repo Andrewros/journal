@@ -1,8 +1,8 @@
 const questions = [
   "Why listen to this daily",
   "What is the most important fact to remember that is also obviously true",
-  "What is the only way to learn something?",
   "What is the only way to be happy?",
+  "What is the only way to learn something?",
   "What are the main ways to win any game",
   "What is the worst thing to do with private knowledge you just aquired",
   "What is the most important fact about discomfort",
@@ -34,7 +34,8 @@ const questions = [
   "When is the only time you should not go to bed by 8PM?",
   "What is the algorithm for negotiations",
   "What is the best way to show empathy in a conversation?",
-  "What is the best way to make something bad seem not as bad?"
+  "What is the best way to make something bad seem not as bad?",
+  "Why is no so powerful in negotiations?"
 ];
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -72,7 +73,8 @@ const answers = [
   "You should only go to bed after 8PM if you completed all of the Ankis for tomorrow and also have adjusted the schedule for that. The and is important. All ankis must be done because that is most likely to be skipped when waking up late.",
   "The algorithm for negotiations is saying I'm sorry then mirror them and then be quiet then repeat. Ask clarifying questions too that are open ended since you can't just mirror but that mix will get you great results. ",
   "The best way to show someone empathy is to use labels like 'It sounds like'. 'It seems like' and more to make them feel understand",
-  "The best way to make something bad seem not as bad is by straightforwardly saying the bad thing without filter or sounding better and then explaining the positives. This leads to peolpe not actually thinking of it as bad."
+  "The best way to make something bad seem not as bad is by straightforwardly saying the bad thing without filter or sounding better and then explaining the positives. This leads to peolpe not actually thinking of it as bad.",
+  "No is incredibly important in negotiation because it encourages a response from the other person as people don't like being mislabeled. It encourages responses from people who ignore you. It encourages them to give clarification. And it can give them more security as they feel like they are the one in charge.",
 ];
 
 const promptText = document.querySelector("#promptText");
