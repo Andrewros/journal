@@ -35,7 +35,8 @@ const questions = [
   "What is the algorithm for negotiations",
   "What is the best way to show empathy in a conversation?",
   "What is the best way to make something bad seem not as bad?",
-  "Why is no so powerful in negotiations?"
+  "Why is no so powerful in negotiations?",
+  "Why is that's right so important in negotiation and how do you trigger it?"
 ];
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -75,6 +76,7 @@ const answers = [
   "The best way to show someone empathy is to use labels like 'It sounds like'. 'It seems like' and more to make them feel understand",
   "The best way to make something bad seem not as bad is by straightforwardly saying the bad thing without filter or sounding better and then explaining the positives. This leads to peolpe not actually thinking of it as bad.",
   "No is incredibly important in negotiation because it encourages a response from the other person as people don't like being mislabeled. It encourages responses from people who ignore you. It encourages them to give clarification. And it can give them more security as they feel like they are the one in charge.",
+  "That's right is so important in negotiation because it means that the other person fully understands instead of just saying yes to go along. The best way to trigger a that's right is to summarize there position with a steelman."
 ];
 
 const promptText = document.querySelector("#promptText");
