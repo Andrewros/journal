@@ -37,7 +37,9 @@ const questions = [
   "How in negotiation do you bend the other persons reality",
   "How do you make sure that someones yes is genuine?",
   "How can you tell from pronouns if someone is important or not",
-  "How do you make people feel more empathy for you"
+  "How do you make people feel more empathy for you",
+  "What is ackerman process for negotiation",
+  "What should you assume in a negotiation if the other person seems like they are completely crazy"
 ];
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -78,7 +80,9 @@ const answers = [
   "The way you bend the other persons reality in negotiation is to anchor their emotions saying that it's gonna be awful, letting the other person set the price first and if you set the price make it a high range or use odd numbers that sound calculated. Also talk in terms of nonmonetary terms and make trades in terms of those for a higher salary and things you don't care about.",
   "Use the rule of three and make the other person say yes in 3 ways. The initial commitment, summary, and a how question about the action.",
   "If someone uses we pronouns they are important if they use I pronouns they are not important",
-  "Use your own name and tell them about it so they have more empathy towards you and see you more as a human."
+  "Use your own name and tell them about it so they have more empathy towards you and see you more as a human.",
+  "Ackerman process for negotiation is start by asking 65% of target price then 85% then 95% with final number being odd to make them think it's your best offer and do the algorithm below in the middle.(Invert this to 1.35, 1.15, 1.05 if other direction)",
+  "If someone seems crazy they are likely 1. Acting off incorrect information, 2. Are constrained by something else or 3. Have other interests"
 ];
 
 const promptText = document.querySelector("#promptText");
