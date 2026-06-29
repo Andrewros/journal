@@ -34,7 +34,10 @@ const questions = [
   "What is the best way to make something bad seem not as bad?",
   "Why is no so powerful in negotiations?",
   "Why is that's right so important in negotiation and how do you trigger it?",
-  "How in negotiation do you bend the other persons reality"
+  "How in negotiation do you bend the other persons reality",
+  "How do you make sure that someones yes is genuine?",
+  "How can you tell from pronouns if someone is important or not",
+  "How do you make people feel more empathy for you"
 ];
 const answers = [
   "You should listen to this daily because one of the main ways that humans actually believe things is through hearing them repeatedly. This is helpful propoganda. Just remembering things are true doesn't make you fully believe it.",
@@ -72,7 +75,10 @@ const answers = [
   "The best way to make something bad seem not as bad is by straightforwardly saying the bad thing without filter or sounding better and then explaining the positives. This leads to peolpe not actually thinking of it as bad.",
   "No is incredibly important in negotiation because it encourages a response from the other person as people don't like being mislabeled. It encourages responses from people who ignore you. It encourages them to give clarification. And it can give them more security as they feel like they are the one in charge.",
   "That's right is so important in negotiation because it means that the other person fully understands instead of just saying yes to go along. The best way to trigger a that's right is to summarize there position with a steelman.",
-  "The way you bend the other persons reality in negotiation is to anchor their emotions saying that it's gonna be awful, letting the other person set the price first and if you set the price make it a high range or use odd numbers that sound calculated. Also talk in terms of nonmonetary terms and make trades in terms of those for a higher salary and things you don't care about."
+  "The way you bend the other persons reality in negotiation is to anchor their emotions saying that it's gonna be awful, letting the other person set the price first and if you set the price make it a high range or use odd numbers that sound calculated. Also talk in terms of nonmonetary terms and make trades in terms of those for a higher salary and things you don't care about.",
+  "Use the rule of three and make the other person say yes in 3 ways. The initial commitment, summary, and a how question about the action.",
+  "If someone uses we pronouns they are important if they use I pronouns they are not important",
+  "Use your own name and tell them about it so they have more empathy towards you and see you more as a human."
 ];
 
 const promptText = document.querySelector("#promptText");
